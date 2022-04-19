@@ -36,7 +36,7 @@ export class AppComponent {
     this.fetchSampleText().subscribe(
       (quotes) =>
         (this.sampleText = _.shuffle(quotes)
-          .slice(0, 1)
+          .slice(0, 10)
           .map(({ text }) => text)
           .join(' '))
     );
